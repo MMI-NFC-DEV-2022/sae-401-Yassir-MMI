@@ -5,25 +5,21 @@ import AfficheCelebrite from '@/components/AfficheCelebrite.vue';
 
 const route = useRoute('/celebrite/[id]');
 
-let {data : film, error} = await supabase
-    .from('Films')
+let {data : Celebrite, error} = await supabase
+    .from('Celebrite')
     .select(`
     *,
-    Celebrite(*),
-    Genre(*),
-    Saga(*),
-    Support(*),
-    Plateforme(*),
-    Variante(*)
+    Films(*)
+    
     `)
     .eq('id', route.params.id)
     .single();
 
-console.log("data film",film);
+console.log("data film",Celebrite);
 </script>
 
 <template>
     <div>
-        <AfficheCelebrite v-bind="film" />
+        <AfficheCelebrite v-bind="Celebrite" />
     </div>
 </template>

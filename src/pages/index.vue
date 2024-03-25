@@ -6,5 +6,8 @@ console.log(supabase);
 </script>
 
 <template>
-  <main>bonjour de home</main>
+  <main>
+    <p class="text-white">bonjour de home</p>
+  </main>
 </template>
+  

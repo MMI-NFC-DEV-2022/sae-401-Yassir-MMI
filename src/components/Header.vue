@@ -1,4 +1,4 @@
-<template><nav class="bg-gray-800 p-4">
+<template><nav class="bg-black p-4">
     <div class="flex justify-between items-center">
       <div class="flex-shrink-0">
         <a href="#" class="text-white text-lg font-semibold">Mon Site</a>
@@ -14,7 +14,6 @@
       <div class="hidden md:block">
         <div class="flex space-x-4">
           <RouterLink to="/" class="text-white hover:text-gray-300">Home</RouterLink>
-          <RouterLink to="/about" class="text-white hover:text-gray-300">About</RouterLink>
           <RouterLink to="/films" class="text-white hover:text-gray-300">Films</RouterLink>
           <RouterLink to="/films/edit" class="text-white hover:text-gray-300">Créer des maisons</RouterLink>
           <RouterLink to="/login-logout" class="text-white hover:text-gray-300">Connexion</RouterLink>

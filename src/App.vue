@@ -8,7 +8,7 @@ import Footer from './components/Footer.vue';
 <template>
   <Header />
     <Suspense> 
-      <RouterView />
+      <RouterView class="bg-neutral-700"/>
     </Suspense>
   <Footer />
 </template>

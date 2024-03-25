@@ -13,16 +13,17 @@ let {data : film, error} = await supabase
     Saga (*),
     Support (*),
     Plateforme (*),
-    Variante (*),
+    variante_film(*)
     `)
     .eq('id', route.params.id)
     .single();
+    if (error) console.error("bug dns /pages/films/[id] ", error);
 console.log("data film", film);
 
 </script>
 
 <template>
-    <div>
+    <div >       
         <AfficheSingle v-bind="film" />
     </div>
 </template>
